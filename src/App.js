@@ -10,9 +10,9 @@ import ImageLinkForm from './components/imageLinkForm/imageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
-//add your API key here from Clarifai
+//API key here from Clarifai
 const app = new Clarifai.App({
- apiKey: 'YOUR_API_HERE'
+ apiKey: '8f0cda828a77432c934646605e4b73bd'
 });
 
 const particles = {
