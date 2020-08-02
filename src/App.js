@@ -8,11 +8,12 @@ import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/imageLinkForm/imageLinkForm';
 import Rank from './components/Rank/Rank';
+import apiKey1 from './config.js';
 import './App.css';
 
 //API key here from Clarifai
 const app = new Clarifai.App({
- apiKey: '8f0cda828a77432c934646605e4b73bd'
+  apiKey: apiKey1
 });
 
 const particles = {
@@ -117,7 +118,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-         <Particles className='particles'
+          <Particles className='particles'
           params={particles}
         />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
